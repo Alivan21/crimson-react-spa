@@ -17,7 +17,7 @@
     "utils": "@/libs/clsx",
     "ui": "@/components/ui",
     "lib": "@/libs",
-    "hooks": "@/hooks"
+    "hooks": "@/hooks/shared"
   },
   "menuColor": "default",
   "menuAccent": "subtle",
