@@ -142,7 +142,7 @@ function CardExample() {
               </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>
-          <Badge className="ml-auto" variant="secondary">
+          <Badge className="ml-auto" variant="warning">
             Warning
           </Badge>
         </CardFooter>

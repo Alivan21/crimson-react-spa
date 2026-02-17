@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
 
 import { Toaster } from "./components/ui/sonner";
+import { TooltipProvider } from "./components/ui/tooltip";
 import { createRoutesFromFiles } from "./libs/react-router";
 import { TanstackProvider } from "./libs/tanstack-query";
 import "./index.css";
@@ -18,8 +19,10 @@ const router = createBrowserRouter([routes]);
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <TanstackProvider>
-      <RouterProvider router={router} />
-      <Toaster duration={2000} position="top-right" richColors />
+      <TooltipProvider>
+        <RouterProvider router={router} />
+        <Toaster duration={2000} position="top-right" richColors />
+      </TooltipProvider>
     </TanstackProvider>
   </StrictMode>
 );
