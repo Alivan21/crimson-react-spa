@@ -76,11 +76,11 @@ export default defineConfig([
           },
         },
       ],
+      "prettier/prettier": "warn",
+      "import/no-duplicates": "warn",
       "sort-imports": "off",
       "import/first": "off",
       "import/newline-after-import": "off",
-      "import/no-duplicates": "warn",
-      "prettier/prettier": "warn",
     },
     settings: {
       react: {
